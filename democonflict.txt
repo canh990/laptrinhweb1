@@ -1,2 +1,2 @@
 demo thui 
-ahihi file nay la cua marge
+ahihi file nay la cua marge và conflic
