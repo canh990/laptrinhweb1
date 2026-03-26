@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách user</title>
+    <style>
+        /* Reset CSS cơ bản */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        /* Container chính */
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        /* Thanh Navigation */
+        .nav-bar {
+            border: 1px solid #999;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .nav-bar strong {
+            font-weight: bold;
+        }
+
+        /* Tiêu đề trang */
+        .page-title {
+            text-align: center;
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Bảng dữ liệu */
+        table {
+            width: 85%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 8px 10px;
+        }
+
+        th {
+            background-color: #fff;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        td.text-center {
+            text-align: center;
+        }
+
+        /* Định dạng liên kết trong cột Thao tác */
+        .action-links a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .action-links a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+
+        /* Phân trang (Pagination) */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            gap: 5px;
+        }
+
+        .pagination a {
+            border: 1px solid #ccc;
+            padding: 6px 12px;
+            text-decoration: none;
+            color: #007bff;
+            font-size: 14px;
+            border-radius: 3px;
+        }
+
+        .pagination a:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Footer */
+        .footer {
+            border: 1px solid #999;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Thanh Navigation -->
+        <div class="nav-bar">
+            Home | <strong>Đăng xuất</strong>
+        </div>
+
+        <!-- Nội dung chính -->
+        <h2 class="page-title">Danh sách user</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 10%;">#</th>
+                    <th style="width: 25%;">Username</th>
+                    <th style="width: 35%;">Email</th>
+                    <th style="width: 30%;">Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center">1</td>
+                    <td>UPVH</td>
+                    <td>ATJW@gmail.com</td>
+                    <td class="text-center action-links">
+                        <a href="#">Edit</a> | <a href="#">View</a> | <a href="#">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">2</td>
+                    <td>IFUK</td>
+                    <td>KULB@gmail.com</td>
+                    <td class="text-center action-links">
+                        <a href="#">Edit</a> | <a href="#">View</a> | <a href="#">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">3</td>
+                    <td>DZZQ</td>
+                    <td>ERNB@gmail.com</td>
+                    <td class="text-center action-links">
+                        <a href="#">Edit</a> | <a href="#">View</a> | <a href="#">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">4</td>
+                    <td>NJYY</td>
+                    <td>ROIF@gmail.com</td>
+                    <td class="text-center action-links">
+                        <a href="#">Edit</a> | <a href="#">View</a> | <a href="#">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">5</td>
+                    <td>YUMG</td>
+                    <td>KITN@gmail.com</td>
+                    <td class="text-center action-links">
+                        <a href="#">Edit</a> | <a href="#">View</a> | <a href="#">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">6</td>
+                    <td>WZSU</td>
+                    <td>CVTL@gmail.com</td>
+                    <td class="text-center action-links">
+                        <a href="#">Edit</a> | <a href="#">View</a> | <a href="#">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">7</td>
+                    <td>WXFQ</td>
+                    <td>MIUZ@gmail.com</td>
+                    <td class="text-center action-links">
+                        <a href="#">Edit</a> | <a href="#">View</a> | <a href="#">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">8</td>
+                    <td>XZOR</td>
+                    <td>YZLV@gmail.com</td>
+                    <td class="text-center action-links">
+                        <a href="#">Edit</a> | <a href="#">View</a> | <a href="#">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">9</td>
+                    <td>HGGO</td>
+                    <td>OYYX@gmail.com</td>
+                    <td class="text-center action-links">
+                        <a href="#">Edit</a> | <a href="#">View</a> | <a href="#">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">10</td>
+                    <td>PXZX</td>
+                    <td>YSML@gmail.com</td>
+                    <td class="text-center action-links">
+                        <a href="#">Edit</a> | <a href="#">View</a> | <a href="#">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Phân trang -->
+        <div class="pagination">
+            <a href="#">Previous</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">Next</a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            Lập trình web @01/2024
+        </div>
+    </div>
+
+</body>
+</html>
