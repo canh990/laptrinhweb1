@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Màn hình chi tiết</title>
+    <style>
+        /* Reset CSS cơ bản */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        /* Container chính */
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        /* Thanh Navigation */
+        .nav-bar {
+            border: 1px solid #999;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 40px;
+            font-size: 14px;
+        }
+
+        .nav-bar strong {
+            font-weight: bold;
+        }
+
+        /* Khung hiển thị chi tiết */
+        .detail-box {
+            border: 1px solid #999;
+            max-width: 450px;
+            margin: 0 auto 40px auto;
+            padding: 30px;
+        }
+
+        .detail-box h2 {
+            text-align: center;
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        /* Dòng hiển thị thông tin */
+        .info-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .info-group .label {
+            width: 100px;
+        }
+
+        .info-group .value {
+            flex: 1;
+            font-weight: bold; /* In đậm chữ theo thiết kế */
+        }
+
+        /* Khu vực Nút bấm */
+        .actions {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 40px;
+        }
+
+        .actions button {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .actions button:hover {
+            background-color: #004494;
+        }
+
+        /* Footer */
+        .footer {
+            border: 1px solid #999;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Thanh Navigation -->
+        <div class="nav-bar">
+            Home | <strong>Đăng xuất</strong>
+        </div>
+
+        <!-- Khung chi tiết -->
+        <div class="detail-box">
+            <h2>Màn hình chi tiết</h2>
+            
+            <div class="info-group">
+                <span class="label">Username</span>
+                <span class="value">test1</span>
+            </div>
+            
+            <div class="info-group">
+                <span class="label">Email</span>
+                <span class="value">test1@gmail.com</span>
+            </div>
+            
+            <div class="actions">
+                <!-- Chuyển hướng sang trang cập nhật -->
+                <button type="button" onclick="window.location.href='update.html'">Chỉnh sửa</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            Lập trình web @01/2024
+        </div>
+    </div>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Màn hình chi tiết</title>
+    <style>
+        /* Reset CSS cơ bản */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        /* Container chính */
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        /* Thanh Navigation */
+        .nav-bar {
+            border: 1px solid #999;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 40px;
+            font-size: 14px;
+        }
+
+        .nav-bar strong {
+            font-weight: bold;
+        }
+
+        /* Khung hiển thị chi tiết */
+        .detail-box {
+            border: 1px solid #999;
+            max-width: 450px;
+            margin: 0 auto 40px auto;
+            padding: 30px;
+        }
+
+        .detail-box h2 {
+            text-align: center;
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        /* Dòng hiển thị thông tin */
+        .info-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .info-group .label {
+            width: 100px;
+        }
+
+        .info-group .value {
+            flex: 1;
+            font-weight: bold; /* In đậm chữ theo thiết kế */
+        }
+
+        /* Khu vực Nút bấm */
+        .actions {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 40px;
+        }
+
+        .actions button {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .actions button:hover {
+            background-color: #004494;
+        }
+
+        /* Footer */
+        .footer {
+            border: 1px solid #999;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Thanh Navigation -->
+        <div class="nav-bar">
+            Home | <strong>Đăng xuất</strong>
+        </div>
+
+        <!-- Khung chi tiết -->
+        <div class="detail-box">
+            <h2>Màn hình chi tiết</h2>
+            
+            <div class="info-group">
+                <span class="label">Username</span>
+                <span class="value">test1</span>
+            </div>
+            
+            <div class="info-group">
+                <span class="label">Email</span>
+                <span class="value">test1@gmail.com</span>
+            </div>
+            
+            <div class="actions">
+                <!-- Chuyển hướng sang trang cập nhật -->
+                <button type="button" onclick="window.location.href='update.html'">Chỉnh sửa</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            Lập trình web @01/2024
+        </div>
+    </div>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Màn hình chi tiết</title>
+    <style>
+        /* Reset CSS cơ bản */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        /* Container chính */
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        /* Thanh Navigation */
+        .nav-bar {
+            border: 1px solid #999;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 40px;
+            font-size: 14px;
+        }
+
+        .nav-bar strong {
+            font-weight: bold;
+        }
+
+        /* Khung hiển thị chi tiết */
+        .detail-box {
+            border: 1px solid #999;
+            max-width: 450px;
+            margin: 0 auto 40px auto;
+            padding: 30px;
+        }
+
+        .detail-box h2 {
+            text-align: center;
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        /* Dòng hiển thị thông tin */
+        .info-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .info-group .label {
+            width: 100px;
+        }
+
+        .info-group .value {
+            flex: 1;
+            font-weight: bold; /* In đậm chữ theo thiết kế */
+        }
+
+        /* Khu vực Nút bấm */
+        .actions {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 40px;
+        }
+
+        .actions button {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .actions button:hover {
+            background-color: #004494;
+        }
+
+        /* Footer */
+        .footer {
+            border: 1px solid #999;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Thanh Navigation -->
+        <div class="nav-bar">
+            Home | <strong>Đăng xuất</strong>
+        </div>
+
+        <!-- Khung chi tiết -->
+        <div class="detail-box">
+            <h2>Màn hình chi tiết</h2>
+            
+            <div class="info-group">
+                <span class="label">Username</span>
+                <span class="value">test1</span>
+            </div>
+            
+            <div class="info-group">
+                <span class="label">Email</span>
+                <span class="value">test1@gmail.com</span>
+            </div>
+            
+            <div class="actions">
+                <!-- Chuyển hướng sang trang cập nhật -->
+                <button type="button" onclick="window.location.href='update.html'">Chỉnh sửa</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            Lập trình web @01/2024
+        </div>
+    </div>
+
+</body>
+</html>
